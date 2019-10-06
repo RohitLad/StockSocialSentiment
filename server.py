@@ -1,6 +1,2 @@
-import os
-os.environ['dev'] = '1'
-from model import dev_server
-
-if __name__ == '__main__':
-    dev_server(debug=True)
+from app import create_app
+server = create_app()
